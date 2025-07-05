@@ -1,5 +1,6 @@
-package com.xcelerateit.common;
+package com.xcelerateit.exception;
 
+import com.xcelerateit.service.exception.ResourceNotFoundException;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 

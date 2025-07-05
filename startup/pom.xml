@@ -20,32 +20,6 @@
     </properties>
 
     <dependencies>
-        <!-- Domain Module -->
-        <dependency>
-            <groupId>com.xcelerateit</groupId>
-            <artifactId>domain</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <!-- Endpoints (REST Controllers) -->
-        <dependency>
-            <groupId>com.xcelerateit</groupId>
-            <artifactId>endpoints.rest</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <!-- Spring Boot Web Starter -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!-- Spring Boot Data JPA Starter -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
         <!-- PostgreSQL Driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -53,11 +27,65 @@
             <version>42.7.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <!-- Repository Module -->
+        <dependency>
+            <groupId>com.xcelerateit</groupId>
+            <artifactId>repository</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Data JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+
         <!-- SLF4J Logging -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
+        <!-- Domain Module -->
+        <dependency>
+            <groupId>com.xcelerateit</groupId>
+            <artifactId>domain</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- Service Module -->
+        <dependency>
+            <groupId>com.xcelerateit</groupId>
+            <artifactId>service</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- Endpoints (REST Controllers) -->
+        <dependency>
+            <groupId>com.xcelerateit</groupId>
+            <artifactId>endpoints.rest</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- CommonModule -->
+        <dependency>
+            <groupId>com.xcelerateit</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+
+
+
     </dependencies>
 
 </project>

@@ -10,9 +10,16 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-  jackson:
-    serialization:
-      INDENT_OUTPUT: true
 
-server:
-  port: 8080
+  logging:
+    level:
+      root: INFO
+      com.accelerate: DEBUG
+  server:
+    port: 8081
+
+    logging:
+      level:
+        org:
+          springframework:
+            security=DEBUG:

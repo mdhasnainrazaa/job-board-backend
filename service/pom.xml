@@ -20,25 +20,25 @@
     </properties>
 
     <dependencies>
-        <!-- Domain module -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.xcelerateit</groupId>
             <artifactId>domain</artifactId>
             <version>1.0.0</version>
+
+
+
         </dependency>
 
-        <!-- Repository module -->
         <dependency>
             <groupId>com.xcelerateit</groupId>
             <artifactId>repository</artifactId>
             <version>1.0.0</version>
-        </dependency>
 
-        <!-- Common module (DTOs, etc.) -->
-        <dependency>
-            <groupId>com.xcelerateit</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0.0</version>
         </dependency>
 
         <!-- PostgreSQL Driver -->
@@ -52,6 +52,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>3.5.0</version>
         </dependency>
 
         <!-- SLF4J Logging -->
@@ -59,6 +60,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.xcelerateit</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.0</version>
+
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>6.4.4</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>

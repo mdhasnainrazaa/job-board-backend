@@ -1,41 +1,69 @@
 package com.xcelerateit.domain;
 
+import com.xcelerateit.domain.model.BaseEntity;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "jobs")
-public class Job {
+public class Job extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
     private String description;
-    private String company;
+    private String skills;
     private String location;
 
-    // Required constructors
-    public Job() {}
+    public Job() {
+    }
 
-    public Job(String title, String description, String company, String location) {
+    public Job(String title, String description, String skills, String location) {
         this.title = title;
         this.description = description;
-        this.company = company;
+        this.skills = skills;
         this.location = location;
     }
 
-    // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    // Getters
+    public Long getId() {
+        return id;
+    }
 
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    public String getTitle() {
+        return title;
+    }
 
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
+    public String getLocation() {
+        return location;
+    }
 
-    public String getCompany() { return company; }
-    public void setCompany(String company) { this.company = company; }
+    public String getSkills() {
+        return skills;
+    }
 
-    public String getLocation() { return location; }
-    public void setLocation(String location) { this.location = location; }
+    public String getDescription() {
+        return description;
+    }
+
+    // ✅ Setters - Add these for update functionality
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setSkills(String skills) {
+        this.skills = skills;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
 }
